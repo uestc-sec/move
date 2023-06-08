@@ -2434,23 +2434,23 @@ impl<'env> ModuleEnv<'env> {
 #[derive(Debug)]
 pub struct StructData {
     /// The name of this struct.
-    name: Symbol,
+    pub name: Symbol,
 
     /// The location of this struct.
-    loc: Loc,
+    pub loc: Loc,
 
     /// Attributes attached to this structure.
-    attributes: Vec<Attribute>,
+    pub attributes: Vec<Attribute>,
 
     /// List of function argument names. Not in bytecode but obtained from AST.
     /// Information about this struct.
-    info: StructInfo,
+    pub info: StructInfo,
 
     /// Field definitions.
     pub field_data: BTreeMap<FieldId, FieldData>,
 
     /// Associated specification.
-    spec: Spec,
+    pub spec: Spec,
 }
 
 #[derive(Debug)]
