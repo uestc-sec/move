@@ -2968,7 +2968,7 @@ pub struct Parameter(pub Symbol, pub Type);
 #[derive(Debug)]
 pub struct FunctionData {
     /// Name of this function.
-    name: Symbol,
+    pub name: Symbol,
 
     /// Location of this function.
     loc: Loc,
