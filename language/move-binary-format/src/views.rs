@@ -307,7 +307,7 @@ impl<'a, T: ModuleAccess> FunctionHandleView<'a, T> {
 
     #[inline]
     pub fn type_parameters(&self) -> &Vec<AbilitySet> {
-        &self.function_handle.type_parameters
+        &self.function_handle.t
     }
 
     pub fn return_count(&self) -> usize {

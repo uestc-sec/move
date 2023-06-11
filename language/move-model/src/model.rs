@@ -2983,7 +2983,7 @@ pub struct FunctionData {
     attributes: Vec<Attribute>,
 
     /// List of function argument names. Not in bytecode but obtained from AST.
-    arg_names: Vec<Symbol>,
+    pub arg_names: Vec<Symbol>,
 
     /// List of type argument names. Not in bytecode but obtained from AST.
     #[allow(unused)]
