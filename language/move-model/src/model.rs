@@ -2971,7 +2971,7 @@ pub struct FunctionData {
     pub name: Symbol,
 
     /// Location of this function.
-    loc: Loc,
+    pub loc: Loc,
 
     /// The definition index of this function in its module.
     def_idx: FunctionDefinitionIndex,
