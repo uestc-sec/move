@@ -33,9 +33,9 @@ pub enum BlockContent {
 }
 
 pub struct StacklessControlFlowGraph {
-    entry_block_id: BlockId,
-    blocks: Map<BlockId, Block>,
-    backward: bool,
+    pub entry_block_id: BlockId,
+    pub blocks: Map<BlockId, Block>,
+    pub backward: bool,
 }
 
 const DUMMY_ENTRANCE: BlockId = 0;
