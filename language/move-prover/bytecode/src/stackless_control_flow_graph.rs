@@ -19,8 +19,8 @@ pub type BlockId = CodeOffset;
 
 #[derive(Debug)]
 pub struct Block {
-    successors: Vec<BlockId>,
-    content: BlockContent,
+    pub successors: Vec<BlockId>,
+    pub content: BlockContent,
 }
 
 #[derive(Copy, Clone, Debug)]
