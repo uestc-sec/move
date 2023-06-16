@@ -18,7 +18,7 @@ type Set<V> = BTreeSet<V>;
 pub type BlockId = CodeOffset;
 
 #[derive(Debug)]
-struct Block {
+pub struct Block {
     successors: Vec<BlockId>,
     content: BlockContent,
 }
